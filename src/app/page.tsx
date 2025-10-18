@@ -9,12 +9,11 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
 export default function Home() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   // Handle scrolling to section when hash is present in URL
   useEffect(() => {
@@ -48,7 +47,7 @@ export default function Home() {
     return () => {
       window.removeEventListener('hashchange', handleHash);
     };
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return (
     <>
