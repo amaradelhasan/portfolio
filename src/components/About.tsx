@@ -28,51 +28,35 @@ const About = () => {
         About Me
       </Heading>
 
-      <Flex 
-        direction={{ base: 'column', md: 'row' }} 
-        gap={8} 
-        align="center"
-      >
-        <Box 
-          flex={{ md: 1 }} 
-          display={{ base: 'flex', md: 'block' }}
-          justifyContent="center"
-        >
-          <Image 
-            src="/images/about-profile.jpg" 
-            alt="Ammar Adel Hasan Profile" 
-            borderRadius="lg"
-            boxSize={{ base: '200px', md: '300px' }}
-            objectFit="cover"
-            border="2px"
-            borderColor="brand.500"
-          />
-        </Box>
-        
-        <VStack 
-          flex={{ md: 2 }} 
-          align={{ base: 'center', md: 'flex-start' }} 
+      <Flex direction={{ base: "column", md: "row" }} gap={8} align="center">
+        <VStack
+          flex={{ md: 2 }}
+          align={{ base: "center", md: "flex-start" }}
           spacing={4}
-          textAlign={{ base: 'center', md: 'left' }}
+          textAlign={{ base: "center", md: "left" }}
         >
           <Text fontSize="lg" color="dark.200">
-            Hello! I'm Ammar Adel Hasan, a Detail-oriented Data Analyst with experience at Egypt's National 
-            Telecommunications Regulatory Authority (NTRA). I specialize in data warehousing, ETL 
-            development, and business intelligence solutions using SQL, Python, and Power BI.
+            Hello! I'm Ammar Adel Hasan, a Detail-oriented Data Analyst with
+            experience at Egypt's National Telecommunications Regulatory
+            Authority (NTRA). I specialize in data warehousing, ETL development,
+            and business intelligence solutions using SQL, Python, and Power BI.
           </Text>
-          
+
           <Text fontSize="lg" color="dark.200">
-            With experience as a Big Data Analyst at NTRA, I've designed comprehensive data warehouse 
-            models, built ETL pipelines for large-scale data integration, and developed interactive 
-            dashboards that enhanced decision-making across departments. My passion lies in turning 
-            complex datasets into clear insights that support data-driven decisions.
+            With experience as a Big Data Analyst at NTRA, I've designed
+            comprehensive data warehouse models, built ETL pipelines for
+            large-scale data integration, and developed interactive dashboards
+            that enhanced decision-making across departments. My passion lies in
+            turning complex datasets into clear insights that support
+            data-driven decisions.
           </Text>
-          
+
           <Text fontSize="lg" color="dark.200">
-            I hold a BS in Computer Science and Bioinformatics from Minya University. 
-            I'm constantly learning and adapting to new technologies in the data analytics field. 
-            When I'm not analyzing data, I enjoy contributing to data governance initiatives, 
-            exploring new visualization techniques, and staying updated with the latest trends 
+            I hold a BS in Computer Science and Bioinformatics from Minya
+            University. I'm constantly learning and adapting to new technologies
+            in the data analytics field. When I'm not analyzing data, I enjoy
+            contributing to data governance initiatives, exploring new
+            visualization techniques, and staying updated with the latest trends
             in business intelligence.
           </Text>
         </VStack>
